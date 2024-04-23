@@ -1,11 +1,11 @@
 <form action="/payment/results" method="get">
   <div style="display:flex; flex-direction:column;">
-    <label>APR</label>
-    <input type="decimal" name="user_apr" placeholder="E.g. 5.42">
-    <label>Number of years</label>
-    <input type="decimal" name="user_years" placeholder="How many years to repay">
-    <label>Principle</label>
-    <input type="decimal" name="user_pv" placeholder="How much principle">
+    <label for="a">APR</label>
+    <input id="a" type="decimal" name="user_apr" placeholder="E.g. 5.42">
+    <label for="b">Number of years</label>
+    <input id="b" type="decimal" name="user_years" placeholder="How many years to repay">
+    <label for="c">Principal</label>
+    <input id="c" type="decimal" name="user_pv" placeholder="How much principle">
     <button type="submit">Calculate monthly payment</button>
   </div>
 </form>

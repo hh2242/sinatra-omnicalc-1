@@ -14,7 +14,7 @@
     </tr>
     <tr>
       <th>Payment</th>
-      <td>$<%= sprintf('%.2f', @pay) %></td>
+      <td>$<%= number_to_currency(@pay, precision: 2) %></td>
     </tr>
   </table>
   <br>

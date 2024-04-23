@@ -20,7 +20,7 @@ get("/square_root/new") do
 end
 
 get("/square_root/results") do
-  number = params[:number].to_i
+  number = params[:number].to_d
   @squareroot = Math.sqrt(number)
   erb(:rootresults)
 end
