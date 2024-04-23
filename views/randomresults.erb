@@ -1,0 +1,17 @@
+<h1>Random Results</h1>
+  <table>
+    <tr>
+      <th>Minimum</th>
+      <td><%= params[:user_min] %></td>
+    </tr>
+    <tr>
+      <th>Maximum</th>
+      <td><%= params[:user_max] %></td>
+    </tr>
+    <tr>
+      <th>Random Number</th>
+      <td><%= @num %></td>
+    </tr>
+  </table>
+  <br>
+  <a href="/random/new">Calculate another random number</a>

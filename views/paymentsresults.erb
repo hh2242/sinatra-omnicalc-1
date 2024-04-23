@@ -1,0 +1,21 @@
+<h1>Payment Results</h1>
+  <table>
+    <tr>
+      <th>APR</th>
+      <td><%= sprintf('%.4f', params[:user_apr])%>%</td>
+    </tr>
+    <tr>
+      <th>Number of years</th>
+      <td><%= params[:user_years] %></td>
+    </tr>
+    <tr>
+      <th>Principle</th>
+      <td>$<%= sprintf('%.2f', params[:user_pv].to_d()) %></td>
+    </tr>
+    <tr>
+      <th>Payment</th>
+      <td>$<%= sprintf('%.2f', @pay) %></td>
+    </tr>
+  </table>
+  <br>
+  <a href="/payment/new">Calculate another payment</a>
